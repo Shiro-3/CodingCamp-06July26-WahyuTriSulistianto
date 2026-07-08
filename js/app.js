@@ -123,7 +123,7 @@ function renderTransactions() {
                 <span class="transaction-meta">${t.category}</span>
             </div>
             <div>
-                <span class="transaction-amount">$${t.amount.toFixed(2)}</span>
+                <span class="transaction-amount">Rp ${t.amount.toLocaleString('id-ID')},-</span>
                 <button class="delete-btn" onclick="deleteTransaction(${t.id})">Delete</button>
             </div>
         `;
